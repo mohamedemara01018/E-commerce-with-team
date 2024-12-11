@@ -25,22 +25,22 @@ function Navbar() {
                 <div className="navbar-middle-bottom">
                     <ul>
                         <li>
-                            <Link to={'/'}>
+                            <Link to={'/category/categoryType'}>
                                 fake data
                             </Link>
                         </li>
                         <li>
-                            <Link to={'/'}>
+                            <Link to={'/category/categoryType'}>
                                 fake data
                             </Link>
                         </li>
                         <li>
-                            <Link to={'/'}>
+                            <Link to={'/category/categoryType'}>
                                 fake data
                             </Link>
                         </li>
                         <li>
-                            <Link to={'/'}>
+                            <Link to={'/category/categoryType'}>
                                 fake data
                             </Link>
                         </li>
