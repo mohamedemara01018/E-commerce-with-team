@@ -1,5 +1,6 @@
 .quantity-inc-dec {
     display: flex;
+
     div {
         width: 20px;
         height: 20px;
@@ -7,9 +8,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        button {
+            all: unset;
+            transition: 0.2s;
+            color: var(--clr-subTitle);
+        }
+
+        button:hover {
+            cursor: pointer;
+            transform: scale(1.09);
+            color: var(--clr-orange)
+        }
     }
 
     div:nth-child(2) {
-        width:30px
+        width: 30px
     }
 }

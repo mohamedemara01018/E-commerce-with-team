@@ -9,12 +9,14 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Category from "./pages/category-page/Category";
 import Cart from "./pages/cart-page/Cart";
+import SingleProduct from "./pages/Single-product-page/SingleProduct";
 function App() {
   return (
     <div>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<SingleProduct />} />
         <Route path="/category/:categoryType" element={<Category />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
