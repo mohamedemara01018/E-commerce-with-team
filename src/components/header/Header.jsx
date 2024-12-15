@@ -21,9 +21,9 @@ function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to={'/Follow Us On'}>
+                                    <a >
                                         Follow Us On
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/" target='_blank'>

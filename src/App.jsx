@@ -12,6 +12,7 @@ import Cart from "./pages/cart-page/Cart";
 import SingleProduct from "./pages/Single-product-page/SingleProduct";
 import Login from "./pages/login-page/Login";
 import Register from "./pages/register-page/Register";
+import Admin from "./pages/admin-page/Admin";
 function App() {
   return (
     <div>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
       <Footer />
 

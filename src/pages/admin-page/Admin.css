@@ -1,0 +1,63 @@
+.admin {
+    padding-block: 2rem;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+.admin-content {
+    background: var(--clr-white);
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 0.5rrm;
+    box-shadow:  0 0 10px 1px rgba(0, 0, 0, 0.1);
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            label {
+                font-size: small;
+                color: var(--clr-subTitle);
+            }
+            input {
+                all:unset;
+                border: 1px solid var(--clr-subTitle);
+                padding: 0.2rem ;
+            }
+            input:focus {
+                border:2px solid var(--clr-orange);
+            }
+            .admin-btn {
+                background: var(--clr-light-orange);
+                text-align: center;
+                border: none;
+                transition: 0.2s;
+                color: var(--clr-light);
+            }
+            .admin-btn:hover {
+                background: var(--clr-orange);
+                cursor: pointer;
+            }
+        }
+
+    }
+    div.not-have-account {
+        display: flex;
+        gap: 0.4rem;
+        font-size: small;
+        color: var(--clr-subTitle);
+    }
+}
