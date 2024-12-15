@@ -10,6 +10,8 @@ import Footer from "./components/footer/Footer";
 import Category from "./pages/category-page/Category";
 import Cart from "./pages/cart-page/Cart";
 import SingleProduct from "./pages/Single-product-page/SingleProduct";
+import Login from "./pages/login-page/Login";
+import Register from "./pages/register-page/Register";
 function App() {
   return (
     <div>
@@ -19,6 +21,8 @@ function App() {
         <Route path="/product/:id" element={<SingleProduct />} />
         <Route path="/category/:categoryType" element={<Category />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
 

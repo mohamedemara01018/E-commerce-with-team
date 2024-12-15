@@ -40,9 +40,8 @@ function Header() {
                         <div className="header-top-right">
                             <ul>
                                 <li>
-                                    <Link to={'/Support'}>
-                                        <span><i className="fa-solid fa-circle-question"></i></span>
-                                        Support
+                                    <Link to={'/admin'}>
+                                        Admin
                                     </Link>
                                 </li>
                                 <li>
@@ -51,7 +50,7 @@ function Header() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to={'/log in'}>
+                                    <Link to={'/login'}>
                                         Log in
                                     </Link>
                                 </li>
