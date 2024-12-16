@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Admin.css'
 
 function Admin() {
+    const navigate = useNavigate();
     return (
         <div className="admin">
             <div className="container">
@@ -15,7 +16,7 @@ function Admin() {
                             <label htmlFor="password">Password</label>
                             <input type="password" id='password' required />
                         </div>
-                        <div className="admin-button">
+                        <div className="admin-button" onClick={() => navigate('/admin/dashboard/product/insert')}>
                             <input className='admin-btn' type="submit" value={'Log in'} />
                         </div>
                     </form>

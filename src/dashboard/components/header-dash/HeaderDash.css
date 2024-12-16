@@ -1,0 +1,11 @@
+.header-dash {
+    background: var(--clr-orange);
+    color: var(--clr-light);
+}
+
+.header-dash-content {
+    padding-block: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
