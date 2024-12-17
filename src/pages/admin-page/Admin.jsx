@@ -1,8 +1,14 @@
 import { Link, useNavigate } from 'react-router-dom'
 import './Admin.css'
+import Input_password from '../../components/input-password/Input_password';
+import { useState } from 'react';
 
 function Admin() {
     const navigate = useNavigate();
+    const [toggle_eye, setToggle_eye] = useState(false)
+    function handleToggle_eye() {
+        setToggle_eye(!toggle_eye)
+    }
     return (
         <div className="admin">
             <div className="container">
@@ -14,7 +20,7 @@ function Admin() {
                         </div>
                         <div className="admin-password">
                             <label htmlFor="password">Password</label>
-                            <input type="password" id='password' required />
+                            <Input_password toggle_eye={toggle_eye} handleToggle_eye={() => handleToggle_eye()} />
                         </div>
                         <div className="admin-button" onClick={() => navigate('/admin/dashboard/product/insert')}>
                             <input className='admin-btn' type="submit" value={'Log in'} />

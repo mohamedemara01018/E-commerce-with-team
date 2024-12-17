@@ -32,6 +32,7 @@
                 font-size: small;
                 color: var(--clr-subTitle);
             }
+            
             input {
                 all:unset;
                 border: 1px solid var(--clr-subTitle);

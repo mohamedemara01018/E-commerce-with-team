@@ -17,12 +17,9 @@ import Dashboard from "./dashboard/page/dashboard-page/Dashboard";
 import ProductDash from './dashboard/page/product-dash/ProductDash';
 import UserDash from './dashboard/page/user-dash/UserDash';
 
-
-
 function App() {
   return (
     <div>
-      {/* <Header /> */}
       <Routes>
         <Route element={<MainLayout />}>
           <Route index path="/" element={<Home />} />
@@ -42,9 +39,6 @@ function App() {
           <Route index path='user' element={<UserDash />} />
         </Route >
       </Routes>
-
-
-
     </div>
   )
 }
