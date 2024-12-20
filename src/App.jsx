@@ -16,6 +16,7 @@ import MainLayout from "./components/main-layout/MainLayout";
 import Dashboard from "./dashboard/page/dashboard-page/Dashboard";
 import ProductDash from './dashboard/page/product-dash/ProductDash';
 import UserDash from './dashboard/page/user-dash/UserDash';
+import Add_product from './dashboard/page/add-product-dash/Add_product';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
         </Route>
         <Route path="/admin/dashboard" element={<Dashboard />} >
           <Route path={'product'} element={<ProductDash />} >
-            <Route index path='insert' element={<div>insert</div>} />
+            <Route index path='insert' element={<Add_product />} />
             <Route index path='update' element={<div>update</div>} />
             <Route index path='delete' element={<div>delete</div>} />
           </Route>
