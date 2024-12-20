@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 function SidebarDash() {
     const [isProductAction, setIsProductAction] = useState(true)
-    const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(true)
     const [dragStart, setDargStart] = useState(0)
     function onDargStart(e) {
         setDargStart(e.clientX);

@@ -24,6 +24,7 @@ function App() {
     <div>
       <Routes>
         <Route element={<MainLayout />}>
+
           <Route index path="/" element={<Home />} />
           <Route path="/product/:id" element={<SingleProduct />} />
           <Route path="/category/:categoryType" element={<Category />} />

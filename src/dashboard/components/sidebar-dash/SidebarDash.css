@@ -7,17 +7,12 @@ li {
     background-color: var(--clr-white);
     width: fit-content;
     height: 92vh;
-    position: fixed;
-    left: 0;
-    top: 7.7vh;
     ul {
         display: flex;
         flex-direction: column;
         align-items: start;
         padding-top: 1rem;
-
         li {
-
             a,
             .sidebar-dash-product {
                 width: 10rem;

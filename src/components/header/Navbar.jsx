@@ -5,7 +5,6 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className="navbar-left">
-                <i className="fa-solid fa-list"></i>
                 <Link to={'/'}>
                     <div className="snap">
                         <span><i className="fa-solid fa-bag-shopping"></i> Snap</span>Up.

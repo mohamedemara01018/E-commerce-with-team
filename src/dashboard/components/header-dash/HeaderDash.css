@@ -1,7 +1,6 @@
 .header-dash {
     background: var(--clr-orange);
     color: var(--clr-light);
-    position: fixed;
     width: 100%;
 }
 
@@ -9,5 +8,11 @@
     padding-block: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    .btn-logout {
+        a {
+            color: var(--clr-white);
+        }
+    }
 }
