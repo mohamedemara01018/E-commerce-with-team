@@ -18,10 +18,23 @@ import ProductDash from './dashboard/page/product-dash/ProductDash';
 import UserDash from './dashboard/page/user-dash/UserDash';
 import Add_product from './dashboard/page/add-product-dash/Add_product';
 import Product_list from './dashboard/page/product-list-dash/Product_list';
+import { Bounce, ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <div>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce} />
       <Routes>
         <Route element={<MainLayout />}>
 

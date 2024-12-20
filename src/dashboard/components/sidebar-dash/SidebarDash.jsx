@@ -39,7 +39,7 @@ function SidebarDash() {
                         {
                             isProductAction ? <ul>
                                 <li>
-                                    <NavLink to={'product/add-edit/1'}>
+                                    <NavLink to={'product/add-edit/add'}>
                                         <i className="fa-solid fa-file-import"></i>
                                         Add Product
                                     </NavLink>

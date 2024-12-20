@@ -11,8 +11,10 @@
     justify-content: space-between;
 
     .btn-logout {
-        a {
+        button {
+            all: unset;
             color: var(--clr-white);
+            cursor: pointer;
         }
     }
 }

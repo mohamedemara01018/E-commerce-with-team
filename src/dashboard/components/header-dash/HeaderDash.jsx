@@ -1,7 +1,12 @@
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './HeaderDash.css'
 
 function HeaderDash() {
+  const navigate = useNavigate()
+  function handleLogOut() {
+    localStorage.removeItem('admin')
+    return navigate('/');
+  }
   return (
     <div className='header-dash'>
       <div className="container">
@@ -10,7 +15,7 @@ function HeaderDash() {
             Admin Dashboard
           </div>
           <div className="btn-logout">
-            <Link to={'/'}>Log Out</Link>
+            <button onClick={handleLogOut}>Log Out</button>
           </div>
         </div>
       </div>
