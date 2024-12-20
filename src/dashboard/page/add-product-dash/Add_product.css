@@ -4,15 +4,12 @@
 
 }
 
-
-
 .add-product-content {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 1rem;
-    /* background: red; */
-
+    
     input,
     select,
     textarea {
@@ -41,6 +38,8 @@
     }
 
     .add-product-inputs {
+        max-height: 80vh;
+        overflow-y: auto;
         padding: 1rem;
         border-radius: 8px;
         width: 100%;
@@ -200,4 +199,8 @@
             }
         }
     }
+}
+
+.add-product-inputs::-webkit-scrollbar {
+    width: 6px;
 }

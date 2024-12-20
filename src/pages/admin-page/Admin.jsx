@@ -9,10 +9,6 @@ function Admin() {
     const [password, setPassword] = useState('')
     console.log(email, password);
     const navigate = useNavigate();
-    const [toggle_eye, setToggle_eye] = useState(false)
-    function handleToggle_eye() {
-        setToggle_eye(!toggle_eye)
-    }
     function handleLogin(e) {
         e.preventDefault()
         if (email != 'marhjmal6@gmail.com' && parseInt(password) != 11111111) {
@@ -39,10 +35,10 @@ function Admin() {
                         </div>
                         <div className="admin-password">
                             <label htmlFor="password">Password</label>
-                            <Input_password password={password} setPassword={(e) => setPassword(e.target.value)} toggle_eye={toggle_eye} handleToggle_eye={() => handleToggle_eye()} />
+                            <Input_password password={password} setPassword={(e) => setPassword(e.target.value)} />
                         </div>
                         <div className="admin-button" onClick={() => handleLogin}>
-                            <input className='admin-btn' type="submit" value={'Log in'} />
+                            <input className='admin-btn' type="submit" value={'Log in as Admin'} />
                         </div>
                     </form>
                     <div className="not-have-account">

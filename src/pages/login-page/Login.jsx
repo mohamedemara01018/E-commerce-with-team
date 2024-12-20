@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import './Login.css'
+import Input_password from '../../components/input-password/Input_password'
 function Login() {
+
     return (
 
         <div className="login">
@@ -9,12 +11,13 @@ function Login() {
                     <form action="">
                         <div className="login-email">
                             <label htmlFor="email">E-mail</label>
-                            <input type="email" id='email' required/>
+                            <input type="email" id='email' required />
                         </div>
-                        <div className="login-password">
+                        <Input_password />
+                        {/* <div className="login-password">
                             <label htmlFor="password">Password</label>
                             <input type="password" id='password' required/>
-                        </div>
+                        </div> */}
                         <div className="login-button">
                             <input className='login-btn' type="submit" value={'Log in'} />
                         </div>

@@ -5,7 +5,7 @@ function HeaderDash() {
   const navigate = useNavigate()
   function handleLogOut() {
     localStorage.removeItem('admin')
-    return navigate('/');
+    return navigate('/login')
   }
   return (
     <div className='header-dash'>
