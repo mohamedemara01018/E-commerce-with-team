@@ -1,13 +1,19 @@
 .add-product {
     width: 100%;
     padding-top: 2rem;
+
 }
+
+/* * {
+    overflow-x: hidden;
+} */
 
 .add-product-content {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 1rem;
+    /* background: red; */
 
     input,
     select,
@@ -60,9 +66,17 @@
                 display: flex;
                 align-items: center;
                 gap: 1rem;
+
+                div {
+                    width: 100%;
+                }
             }
 
-            .input-category-brand {
+            .input-stock-created {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
                 div {
                     width: 100%;
                 }
@@ -100,11 +114,88 @@
                         padding: 2rem;
                         text-align: center;
                         color: var(--clr-subTitle);
+
+                        span {
+                            font-size: 0.8rem;
+                            color: rgb(169, 112, 7)
+                        }
                     }
 
                     p:hover {
                         cursor: pointer;
                         border-color: var(--clr-orange);
+                        color: var(--clr-orange);
+
+                    }
+                }
+
+                .images {
+                    margin-block: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    .image {
+                        /* flex-grow: 1; */
+                        position: relative;
+                        width: 100px;
+                        height: 100px;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+
+                        i {
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            font-size: 10px;
+                            transition: 0.4s;
+                        }
+
+                        i:hover {
+                            cursor: pointer;
+                            color: var(--clr-orange);
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .btn {
+                    text-align: end;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: end;
+                    gap: 0.5rem;
+
+                    button {
+                        flex-grow: 1;
+                        outline: none;
+                        border: none;
+                        background: rgba(255, 166, 0, 0.231);
+                        padding: 0.8rem 2rem;
+                        /* padding: 0; */
+                        border-radius: 3px;
+                        color: var(--clr-orange);
+                        transition: 0.2s;
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                        background: var(--clr-orange);
+                        color: var(--clr-light);
+                    }
+
+                    button:last-child {
+                        background: var(--clr-orange);
+                        color: var(--clr-light);
+                    }
+
+                    button:hover:last-child {
+                        background: rgba(255, 166, 0, 0.231);
                         color: var(--clr-orange);
                     }
                 }

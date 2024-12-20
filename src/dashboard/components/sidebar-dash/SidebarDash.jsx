@@ -4,9 +4,8 @@ import { useState } from 'react'
 
 function SidebarDash() {
     const [isProductAction, setIsProductAction] = useState(true)
-    const [isOpen, setOpen] = useState(true)
+    const [isOpen, setOpen] = useState(false)
     const [dragStart, setDargStart] = useState(0)
-
     function onDargStart(e) {
         setDargStart(e.clientX);
     }
@@ -26,7 +25,6 @@ function SidebarDash() {
                 onDragStart={(e) => onDargStart(e)}
                 onDragEnd={(e) => onDargEnd(e)}
             >
-
             </div>
             {
                 isOpen ? <ul>
@@ -41,27 +39,19 @@ function SidebarDash() {
                         {
                             isProductAction ? <ul>
                                 <li>
-                                    <NavLink to={'product/insert'}>
+                                    <NavLink to={'product/add-edit/1'}>
                                         <i className="fa-solid fa-file-import"></i>
-                                        Insert
+                                        Add Product
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to={'product/update'}>
+                                    <NavLink to={'product/list'}>
                                         <i className="fa-solid fa-pen-to-square"></i>
-                                        Update
-                                    </NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to={'product/delete'}>
-                                        <i className="fa-solid fa-trash"></i>
-                                        Delete
+                                        Product List
                                     </NavLink>
                                 </li>
                             </ul> : null
                         }
-
-
                     </li>
                     <li>
                         <NavLink to={'user'} >
@@ -71,7 +61,6 @@ function SidebarDash() {
                     </li>
                 </ul> : null
             }
-
         </div>
     )
 }

@@ -22,7 +22,7 @@ function Admin() {
                             <label htmlFor="password">Password</label>
                             <Input_password toggle_eye={toggle_eye} handleToggle_eye={() => handleToggle_eye()} />
                         </div>
-                        <div className="admin-button" onClick={() => navigate('/admin/dashboard/product/insert')}>
+                        <div className="admin-button" onClick={() => navigate('/admin/dashboard/product/add-edit/add')}>
                             <input className='admin-btn' type="submit" value={'Log in'} />
                         </div>
                     </form>

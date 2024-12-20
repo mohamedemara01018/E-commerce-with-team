@@ -17,6 +17,7 @@ import Dashboard from "./dashboard/page/dashboard-page/Dashboard";
 import ProductDash from './dashboard/page/product-dash/ProductDash';
 import UserDash from './dashboard/page/user-dash/UserDash';
 import Add_product from './dashboard/page/add-product-dash/Add_product';
+import Product_list from './dashboard/page/product-list-dash/Product_list';
 
 function App() {
   return (
@@ -33,9 +34,8 @@ function App() {
         </Route>
         <Route path="/admin/dashboard" element={<Dashboard />} >
           <Route path={'product'} element={<ProductDash />} >
-            <Route index path='insert' element={<Add_product />} />
-            <Route index path='update' element={<div>update</div>} />
-            <Route index path='delete' element={<div>delete</div>} />
+            <Route index path='add-edit/:id' element={<Add_product />} />
+            <Route index path='list' element={<Product_list />} />
           </Route>
           <Route index path='user' element={<UserDash />} />
         </Route >
