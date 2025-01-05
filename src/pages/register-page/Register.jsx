@@ -30,7 +30,7 @@ function Register() {
                         Do you have an account? <Link to={'/login'}>Login</Link>
                     </div>
                     <div className="not-have-account">
-                        Lost your password?  <Link to={'/Login'}>Rest</Link>
+                        Lost your password?  <Link to={'/resetpasswrod'}>Rest</Link>
                     </div>
                 </div>
             </div>

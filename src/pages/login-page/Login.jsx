@@ -1,23 +1,26 @@
 import { Link } from 'react-router-dom'
 import './Login.css'
 import Input_password from '../../components/input-password/Input_password'
+import { useState } from 'react'
 function Login() {
-
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
     return (
 
         <div className="login">
             <div className="container">
                 <div className="login-content">
                     <form action="">
-                        <div className="login-email">
+                        <div className="admin-email">
                             <label htmlFor="email">E-mail</label>
-                            <input type="email" id='email' required />
+                            <input type="email" id='email' value={email} onChange={(e) => setEmail(e.target.value)} required />
                         </div>
-                        <Input_password />
-                        {/* <div className="login-password">
+
+                        <div className="admin-password">
                             <label htmlFor="password">Password</label>
-                            <input type="password" id='password' required/>
-                        </div> */}
+                            <Input_password password={password} setPassword={(e) => setPassword(e.target.value)} />
+                        </div>
+
                         <div className="login-button">
                             <input className='login-btn' type="submit" value={'Log in'} />
                         </div>
@@ -26,7 +29,7 @@ function Login() {
                         Do not have an account? <Link to={'/register'}>Register</Link>
                     </div>
                     <div className="not-have-account">
-                        Lost your password?  <Link to={'/register'}>Rest</Link>
+                        Lost your password?  <Link to={'/resetpasswrod'}>Rest</Link>
                     </div>
                 </div>
             </div>

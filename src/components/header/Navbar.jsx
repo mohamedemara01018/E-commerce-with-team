@@ -25,25 +25,24 @@ function Navbar() {
                     <ul>
                         <li>
                             <Link to={'/category/categoryType'}>
-                                fake data
+                                category
                             </Link>
                         </li>
                         <li>
                             <Link to={'/category/categoryType'}>
-                                fake data
+                                category
                             </Link>
                         </li>
                         <li>
                             <Link to={'/category/categoryType'}>
-                                fake data
+                                category
                             </Link>
                         </li>
                         <li>
                             <Link to={'/category/categoryType'}>
-                                fake data
+                                category
                             </Link>
                         </li>
-
                     </ul>
                 </div>
             </div>

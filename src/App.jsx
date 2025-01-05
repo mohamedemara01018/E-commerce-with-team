@@ -19,6 +19,7 @@ import UserDash from './dashboard/page/user-dash/UserDash';
 import Add_product from './dashboard/page/add-product-dash/Add_product';
 import Product_list from './dashboard/page/product-list-dash/Product_list';
 import { Bounce, ToastContainer } from 'react-toastify';
+import Rest from './pages/rest-page/Rest';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/resetpasswrod" element={<Rest />} />
           <Route path="/admin" element={<Admin />} />
         </Route>
         <Route path="/admin/dashboard" element={<Dashboard />} >
