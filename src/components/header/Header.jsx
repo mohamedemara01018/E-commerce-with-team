@@ -10,16 +10,7 @@ function Header() {
                     <div className="header-top">
                         <div className="header-top-left">
                             <ul>
-                                <li>
-                                    <Link to={'/Seller Center'}>
-                                        Seller Center
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to={'/Download'}>
-                                        Download
-                                    </Link>
-                                </li>
+                               
                                 <li>
                                     <a >
                                         Follow Us On

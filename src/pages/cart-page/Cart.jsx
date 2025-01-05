@@ -26,55 +26,132 @@ function Cart() {
         <div className='cart'>
             <div className="container">
                 <div className="cart-content">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>
-                                    S.N.
-                                </th>
-                                <th>
-                                    Image
-                                </th>
-                                <th>
-                                    Product
-                                </th>
-                                <th>
-                                    Unit price
-                                </th>
+                    <div className="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        S.N.
+                                    </th>
+                                    <th>
+                                        Image
+                                    </th>
+                                    <th>
+                                        Product
+                                    </th>
+                                    <th>
+                                        Unit price
+                                    </th>
 
-                                <th>
-                                    Quantity
-                                </th>
+                                    <th>
+                                        Quantity
+                                    </th>
 
-                                <th>
-                                    Total price
-                                </th>
-                                <th>
-                                    actions
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                                    <th>
+                                        Total price
+                                    </th>
+                                    <th>
+                                        actions
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <img src={img} alt='img' width={50} />
-                                </td>
-                                <td>iphone</td>
-                                <td>10$</td>
-                                <td>100$</td>
-                                <td><Quantity_inc_dec quantity={quantity} increase={() => handleIcrease} decrease={() => handleDerease} /></td>
-                                <td>
-                                    <button>
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src={img} alt='img' width={50} />
+                                    </td>
+                                    <td>iphone</td>
+                                    <td>10$</td>
+                                    <td>100$</td>
+                                    <td><Quantity_inc_dec quantity={quantity} increase={() => handleIcrease} decrease={() => handleDerease} /></td>
+                                    <td>
+                                        <button>
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src={img} alt='img' width={50} />
+                                    </td>
+                                    <td>iphone</td>
+                                    <td>10$</td>
+                                    <td>100$</td>
+                                    <td><Quantity_inc_dec quantity={quantity} increase={() => handleIcrease} decrease={() => handleDerease} /></td>
+                                    <td>
+                                        <button>
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src={img} alt='img' width={50} />
+                                    </td>
+                                    <td>iphone</td>
+                                    <td>10$</td>
+                                    <td>100$</td>
+                                    <td><Quantity_inc_dec quantity={quantity} increase={() => handleIcrease} decrease={() => handleDerease} /></td>
+                                    <td>
+                                        <button>
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src={img} alt='img' width={50} />
+                                    </td>
+                                    <td>iphone</td>
+                                    <td>10$</td>
+                                    <td>100$</td>
+                                    <td><Quantity_inc_dec quantity={quantity} increase={() => handleIcrease} decrease={() => handleDerease} /></td>
+                                    <td>
+                                        <button>
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src={img} alt='img' width={50} />
+                                    </td>
+                                    <td>iphone</td>
+                                    <td>10$</td>
+                                    <td>100$</td>
+                                    <td><Quantity_inc_dec quantity={quantity} increase={() => handleIcrease} decrease={() => handleDerease} /></td>
+                                    <td>
+                                        <button>
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src={img} alt='img' width={50} />
+                                    </td>
+                                    <td>iphone</td>
+                                    <td>10$</td>
+                                    <td>100$</td>
+                                    <td><Quantity_inc_dec quantity={quantity} increase={() => handleIcrease} decrease={() => handleDerease} /></td>
+                                    <td>
+                                        <button>
+                                            Delete
+                                        </button>
+                                    </td>
+                                </tr>
 
 
-                        </tbody>
-                    </table>
+                            </tbody>
+                        </table>
+                    </div>
                     <div className="cart-content-bottom">
 
                         <button >

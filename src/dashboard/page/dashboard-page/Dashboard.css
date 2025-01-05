@@ -1,4 +1,5 @@
 .home-dash {
     display: flex;
     align-items: start;
+    overflow: hidden;
 }

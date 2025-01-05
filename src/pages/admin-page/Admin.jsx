@@ -14,7 +14,7 @@ function Admin() {
         if (email != 'marhjmal6@gmail.com' && parseInt(password) != 11111111) {
             return toast('Email And Password is not correct')
         }
-        else if (email != 'marhjmal6@gmail.com') {
+        else if (email != 'mohamed@gmail.com') {
             return toast('Email is not correct')
         } else if (parseInt(password) != 11111111) {
             return toast('Password is not correct')

@@ -7,82 +7,98 @@
     flex-direction: column;
     gap: 2rem;
 
-    table {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    .table-container {
+        max-width: 100%;
+        overflow-x: auto;
 
-        thead {
-            background: var(--clr-white);
+        table {
             width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: 1rem;
+            
+            thead {
+                width: 100%;
+                border-collapse: collapse;
+                min-width: 800px;
+                background: var(--clr-white);
+                
 
-            tr {
-                display: flex;
-                align-items: center;
-
-                th {
-                    padding: 0.5rem;
-                    flex-basis: 300px;
-                    flex-grow: 1;
-                    text-align: start;
-                    color: rgb(122, 122, 122);
-                    font-size: medium;
-                }
-
-                th:first-child {
-                    flex-basis: 100px;
-                }
-
-                th:nth-child(3) {
-                    flex-basis: 450px;
-                }
-
-            }
-        }
-
-        tbody {
-            background: var(--clr-white);
-            width: 100%;
-
-            tr {
-                border-bottom: 1px solid var(--clr-light-gray);
-                display: flex;
-                align-items: center;
-
-                td {
-
-                    padding: 0.5rem;
-                    flex-basis: 300px;
-                    flex-grow: 1;
-                    color: rgb(122, 122, 122);
-                    font-size: medium;
-                }
-
-                td:first-child {
-                    flex-basis: 100px;
-                }
-
-                td:nth-child(3) {
-                    flex-basis: 450px;
-                }
-
-                td {
-                    button {
-                        all: unset;
-                        transition: 0.2s;
+                tr {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    th {
+                        padding: 0.5rem;
+                        flex-basis: 300px;
+                        flex-grow: 1;
+                        text-align: start;
+                        color: rgb(122, 122, 122);
+                        font-size: medium;
                     }
 
-                    button:hover {
-                        color: var(--clr-orange);
-                        cursor: pointer;
-                        transform: scale(1.1);
+                    th:first-child {
+                        flex-basis: 100px;
                     }
+
+                    th:nth-child(3) {
+                        flex-basis: 450px;
+                    }
+
                 }
             }
 
+            tbody {
+                width: 100%;
+                border-collapse: collapse;
+                min-width: 800px;
+                background: var(--clr-white);
+
+                tr {
+                    border-bottom: 1px solid var(--clr-light-gray);
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    td {
+
+                        padding: 0.5rem;
+                        flex-basis: 300px;
+                        flex-grow: 1;
+                        color: rgb(122, 122, 122);
+                        font-size: medium;
+                    }
+
+                    td:first-child {
+                        flex-basis: 100px;
+                    }
+
+                    td:nth-child(3) {
+                        flex-basis: 450px;
+                    }
+
+                    td {
+                        button {
+                            all: unset;
+                            transition: 0.2s;
+                        }
+
+                        button:hover {
+                            color: var(--clr-orange);
+                            cursor: pointer;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+            }
         }
     }
+
 }
 
 
